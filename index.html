@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./pagelayout.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>ほろよい: Flavorfully Hard Drinks</title>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="./assets/logo.png"
+        alt="logo"
+        id="nav-logo"
+      />
+      <ul>
+        <li>What's New</li>
+        <li>Company Info</li>
+        <li>Products</li>
+        <li>Sustainability</li> </ul
+      ><br />
+      <hr />
+      <br />
+      <ul>
+        <li>Suppliers</li>
+        <li>Retail</li>
+        <li>Press</li>
+        <li>Careers</li>
+      </ul>
+    </nav>
+    <!-- Vending machine body -->
+    <div id="vending-wrap">
+      <div class="hint">Insert a coin to start!</div>
+      <!-- Popup after drink selected -->
+      <div
+        id="popup"
+        class="hidden"
+      >
+        <div>
+          <!-- image of drink -->
+          <img
+            src=""
+            alt="The drink"
+          />
+          <!-- description of drink -->
+          <h2>Drink Title</h2>
+          <p
+            >A very very descriptive description of the drink using very
+            descriptive words to make it appeal to those looking to try the
+            drink.</p
+          >
+          <div class="rating">
+            Sweetness Level:
+            <ul id="card-rating"> </ul>
+          </div>
+          <!-- close button -->
+          <button id="close-popup">Try another!</button>
+        </div>
+      </div>
+      <div id="vending-body">
+        <!-- Logo -->
+
+        <div>
+          <h1 class="jp-text">ほろよい</h1>
+          <p class="subtitle"><marquee>Flavorful Chu-hi Drinks</marquee></p>
+        </div>
+
+        <!-- Drink menu -->
+        <div id="vending-top">
+          <!-- shelf 1 -->
+          <div class="window">
+            <img
+              src="./assets/cans/white_sour.png"
+              alt="White Sour"
+            />
+            <img
+              src="./assets/cans/peach.png"
+              alt="Peach"
+            />
+            <img
+              src="./assets/cans/energy.png"
+              alt="Vitamin C Energy"
+            />
+            <img
+              src="./assets/cans/yogurt_sour.png"
+              alt="Yogurt Sour"
+            />
+          </div>
+          <div class="selections">
+            <button
+              disabled
+              id="dispense_00"
+              ><span class="blink"></span
+            ></button>
+
+            <button
+              disabled
+              id="dispense_01"
+              ><span class="blink"></span
+            ></button>
+
+            <button
+              disabled
+              id="dispense_02"
+              ><span class="blink"></span
+            ></button>
+
+            <button
+              disabled
+              id="dispense_03"
+              ><span class="blink"></span
+            ></button>
+          </div>
+          <!-- shelf 2 -->
+          <div>
+            <div class="window">
+              <img
+                src="./assets/cans/lemon_orange.png"
+                alt="Lemon Orange"
+              />
+              <img
+                src="./assets/cans/iced_tea_sour.png"
+                alt="Iced Tea Sour"
+              />
+              <img
+                src="./assets/cans/black_currant_orange.png"
+                alt="Black Currant Orange"
+              />
+              <img
+                src="./assets/cans/white_grape.png"
+                alt="White Grape"
+              />
+            </div>
+            <div class="selections">
+              <button
+                disabled
+                id="dispense_04"
+                ><span class="blink"></span
+              ></button>
+
+              <button
+                disabled
+                id="dispense_05"
+                ><span class="blink"></span
+              ></button>
+
+              <button
+                disabled
+                id="dispense_06"
+                ><span class="blink"></span
+              ></button>
+
+              <button
+                disabled
+                id="dispense_07"
+                ><span class="blink"></span
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- currency interface -->
+        <div id="vending-middle">
+          <!-- Logo panel -->
+          <div id="logo-panel">
+            <img
+              id="logo-space"
+              src="./assets/logo.png"
+              alt="Suntory Logo"
+            />
+          </div>
+
+          <!-- Bill feed -->
+          <div id="currency-panel">
+            <div id="bill-panel">
+              Drink Responsibly
+              <!-- <div id="bill-feed"></div> -->
+            </div>
+
+            <!-- Coin panel -->
+            <div id="coin-panel">
+              <!-- Coin feed -->
+              <div id="coin-interface">
+                <button id="coin-feed"> </button>
+                <button id="change-button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="vending-lower"></div>
+        <!-- Drink dispenser -->
+        <div id="drink-dispenser">
+          <button id="drink"></button>
+          <div id="dispenser-door"
+            >LIFT
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="./script.js"
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+nav {
+  background-color: rgb(210, 234, 240);
+  
+  
+  border: solid black 2px;
+  padding: 1em;
+}
+
+#nav-logo {
+  margin: 0 auto;
+  display: block;
+  filter: invert(100);
+}
+
+#selected {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul{
+  border-bottom: none;
+  
+
+}
+
+li:hover {
+  background-color: palegreen;
+  cursor: pointer;
+}
+
+nav > ul > li {
+  border-style: inset;
+  margin-bottom: 5px;
+  color: blue;
+  background-color: rgb(176, 136, 255);
+}

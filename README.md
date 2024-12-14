@@ -1,5 +1,7 @@
 # 90s-website
 
+View the [live link here](https://gcmoony.github.io/90s-website/)!
+
 ## What is this?
 
 This is my submission for the
